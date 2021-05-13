@@ -1,0 +1,757 @@
+@font-face {
+  font-family: Raleway-Light;
+  src: url(font/Raleway-Light.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Raleway-Medium;
+  src: url(font/Raleway-Medium.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(font/Raleway-Regular.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Sacramento;
+  src: url(font/Sacramento-Regular.ttf);
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background-color: rgba(255, 249, 249, 0.78);
+}
+header {
+  height: 10vh;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(219, 218, 218, 0.972);
+  position: fixed;
+}
+.menu {
+  cursor: pointer;
+  display: none;
+}
+nav {
+  width: 50%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 25px 0;
+}
+
+nav ul li a:focus {
+  color: #1597bb;
+}
+nav ul li a:hover {
+  color: #1597bb;
+}
+/* nav hover */
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  top: 10vh;
+  position: absolute;
+  background-color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 15%;
+}
+
+.dropdown li {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.143);
+}
+.dropdown li a {
+  padding: 15px 0;
+}
+
+/* social media */
+.soc-icon {
+  display: flex;
+}
+.soc-icon a {
+  color: black;
+  padding: 5px;
+  font-size: 1rem;
+}
+.soc-icon a:hover {
+  color: #1597bb;
+}
+
+/* main */
+.logo {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.logo a {
+  font-family: "Sacramento", cursive;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-size: 5rem;
+}
+/* subs */
+.sub {
+  margin: auto;
+  width: 90%;
+  background-color: black;
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sub p {
+  color: white;
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
+.sub input {
+  background-color: black;
+  outline: none;
+  color: silver;
+  padding: 10px 30px;
+  margin: 5px;
+}
+
+.sub a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 9.5px 40px;
+  text-transform: uppercase;
+  margin: 5px;
+}
+.sub a:hover {
+  color: white;
+  background-color: #1597bb;
+  transition: 0.2s ease-in;
+}
+/* main */
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 70%;
+}
+.content h1,
+.content h5 {
+  padding-top: 10px;
+}
+.content img {
+  padding-top: 40px;
+  height: 30%;
+  width: 90%;
+  background-position: center;
+}
+.content p {
+  padding-top: 10px;
+  width: 90%;
+  line-height: 2;
+}
+
+/* btn */
+.btn {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(219, 218, 218, 0.972);
+}
+
+.btn h4 {
+  color: gray;
+  font-weight: normal;
+}
+.btn div {
+  width: 40%;
+}
+.btn div a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.btn div a:hover {
+  color: #1597bb;
+}
+.left-btn {
+  text-align: left;
+}
+.right-btn {
+  text-align: right;
+  margin-right: 2%;
+}
+/* aside */
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.recent input {
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  font-size: 0.9rem;
+  outline: none;
+  border: 1px solid rgba(219, 218, 218, 0.972);
+}
+
+.recent h3,
+.soc h3,
+.recent2 h3 {
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.recent p:nth-child(3) {
+  border-top: 2px solid black;
+}
+.recent p {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(219, 218, 218, 0.972);
+}
+
+.recent p a,
+.soc p a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+}
+
+.recent p a:hover {
+  color: #1597bb;
+  text-decoration: underline;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.social-icons i {
+  color: rgba(0, 0, 0, 0.805);
+  padding: 10px 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.social-icons a:first-child {
+  border-top: 2px solid black;
+}
+
+.social-icons a i:hover {
+  color: #1597bb;
+}
+
+/* post 2 */
+.recent2 img {
+  height: 90px;
+  width: 120px;
+}
+
+.recent2 p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* awdwa */
+.recent2 .post-item:nth-child(2) {
+  border-top: 2px solid black;
+}
+.post-item {
+  padding-top: 25px;
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(219, 218, 218, 0.972);
+}
+
+.post-item .item-text {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.item-text a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.item-text a:hover {
+  color: #1597bb;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.newsletter h3 {
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.newsletter-content p {
+  margin-bottom: 20px;
+  margin-top: -20px;
+  padding-top: 20px;
+  border-top: 2px solid black;
+}
+.newsletter-content input {
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid rgba(219, 218, 218, 0.972);
+  outline: none;
+}
+
+.newsletter-content a {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgba(219, 218, 218, 0.972);
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.newsletter-content a:hover {
+  background-color: #1597bb;
+  color: white;
+  transition: 0.2s ease-in;
+}
+/* section1 */
+.section1 {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 1px solid rgba(219, 218, 218, 0.972);
+}
+
+.s1-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.s1-content div {
+  width: 40%;
+}
+
+.section1 p,
+.section1 a {
+  font-size: 0.9rem;
+}
+
+.s1-content h4 {
+  border-bottom: 3px solid rgba(219, 218, 218, 0.972);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  color: black;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+.s1-icons {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.s1-icons a {
+  padding: 10px;
+  color: black;
+  font-size: 1rem;
+}
+.s1-icons a:hover {
+  color: white;
+  border-radius: 10px;
+  background-color: #1597bb;
+}
+.s1-item2 li {
+  list-style-type: none;
+  margin: 10px;
+}
+.s1-item2 a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.s1-item2 a:hover {
+  text-decoration: underline;
+}
+/* footer */
+
+footer {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer i {
+  text-transform: uppercase;
+  margin: 10px;
+  color: gray;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+footer a:hover {
+  color: red;
+}
+
+footer i:hover {
+  color: white;
+}
+
+footer span:hover {
+  color: #1597bb;
+}
+
+footer div:first-child {
+  border-bottom: 1px solid rgba(219, 218, 218, 0.272);
+  padding-bottom: 30px;
+}
+footer div p {
+  color: gray;
+  font-size: 0.8rem;
+  padding-top: 30px;
+}
+/* backtotop */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: white;
+  border: 2px solid #1597bb;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#myBtn:hover {
+  background-color: #1597bb;
+  color: white;
+}
+
+/* menu */
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+  margin: 3.5px;
+  transition: 0.4s;
+}
+
+/* rect */
+.rect {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  width: max-content;
+}
+
+.rect a {
+  padding: 10px;
+  color: black;
+  font-size: 1rem;
+}
+.rect a:hover {
+  background-color: black;
+  color: #1597bb;
+}
+@media screen and (max-width: 1000px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    height: 90vh;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    animation: transform 0.2s ease-in-out;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  nav ul li:hover .dropdown {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+  /* sub media */
+  .sub {
+    margin: auto;
+    width: 90%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  .sub p {
+    color: white;
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+
+  .sub input {
+    width: 90%;
+  }
+
+  .sub a {
+    text-align: center;
+    width: 90%;
+  }
+
+  /* main media */
+
+  .main {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .content h1,
+  .content h5 {
+    padding-top: 10px;
+  }
+  .content img {
+    padding-top: 40px;
+    height: 30%;
+    width: 100%;
+    background-position: center;
+  }
+  .content p {
+    padding-top: 10px;
+    width: 100%;
+    line-height: 2;
+  }
+  .btn div {
+    padding-bottom: 50px;
+  }
+  /* aside */
+  .aside {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .recent input {
+    width: 100%;
+  }
+  .soc-icon a {
+    font-size: 1.3rem;
+  }
+  /* section media */
+  .section1 {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-top: 1px solid rgba(219, 218, 218, 0.972);
+  }
+
+  .s1-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .s1-content div {
+    width: 100%;
+    padding: 30px 0px;
+  }
+
+  /* footer */
+  footer span {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 5px);
+  transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -5px);
+  transform: rotate(45deg) translate(-6px, -5px);
+}
+@keyframes transform {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* 22 */
+
+.tab {
+  overflow: hidden;
+  margin-top: 2rem;
+  border-bottom: 2px solid #1597bb;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: all 0.3s linear;
+  font-size: 17px;
+  text-align: left;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #1597bb;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #1597bb;
+    transition: all 1s linear;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-bottom: 2px solid #1597bb;
+  width: 90%;
+}
+
+.tabcontent p {
+  width: 100%;
+}
+/* close butn */
+.topright {
+  /* float: right; */
+  cursor: pointer;
+  font-size: 28px;
+  align-items: center;
+}
+
+/* .topright:hover {
+  color: red;
+} */
+.tabcontent {
+  width: 100%;
+}
+
+.tabcontent span.topright {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.topright img {
+  width: 15px;
+}
